@@ -100,7 +100,7 @@ $wgUseTeX = false;
 ## be publically accessible from the web.
 #$wgCacheDirectory = "$IP/cache";
 
-$wgLocalInterwiki = strtolower( $wgSitename );
+$wgLocalInterwikis = strtolower( $wgSitename );
 $wgLanguageCode = "ko";
 $wgSecretKey = "933fe4a2804909aa70476737dd7a823e4de912761139e1a5bc2cf7c78a57ffc6";
 
@@ -138,6 +138,7 @@ wfLoadExtension( 'Gadgets' );
 wfLoadExtension( 'CharInsert' );
 wfLoadExtension( 'MultiBoilerplate' );
 wfLoadExtension( 'InputBox' );
+wfLoadExtension( 'CodeMirror' );
 wfLoadExtension( 'SyntaxHighlight_GeSHi' );
 wfLoadExtension( 'Comments' );
 
