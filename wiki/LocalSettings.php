@@ -128,6 +128,7 @@ $wgDiff3 = "/usr/bin/diff3";
 # sure that cached pages are cleared.
 $wgCacheEpoch = max( $wgCacheEpoch, gmdate( 'YmdHis', @filemtime( __FILE__ ) ) );
 
+wfLoadExtension( 'WikiEditor' );
 wfLoadExtension( 'Renameuser' );
 wfLoadExtension( 'ParserFunctions' );
 wfLoadExtension( 'Cite' );
