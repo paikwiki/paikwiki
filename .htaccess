@@ -1,0 +1,14 @@
+<IfModule rewrite_module>
+    RewriteEngine On
+    RewriteBase /
+
+    # RewriteRule ^$ w/ [R,L]
+
+    # don't touch some reserved urls
+    RewriteCond %{REQUEST_FILENAME} -f
+    RewriteRule . - [L]
+
+    RewriteRule ^w/(.+)$ wiki/index.php/$1 [QSA,L]
+    RewriteRule ^wiki/(.+)$ w/$1 [R]
+    # ErrorDocument 404 http://paik.wiki/error.html
+</IfModule>
